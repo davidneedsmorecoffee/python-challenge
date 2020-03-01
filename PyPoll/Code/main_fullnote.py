@@ -31,23 +31,6 @@ print(uniq_candidates) #[["O'Tooley"], ['Khan'], ['Li'], ['Correy']]
 # the set(...) creates an unordered collection with no duplicate elements
 # the list(t) for t in part takes the output form the set(...) and convert it back to a list
 
-# tupules 
-        # consist of a number of values separated by commas
-        # https://docs.python.org/3/tutorial/datastructures.html
-                # "Though tuples may seem similar to lists, they are often used in different situations and for different purposes. Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of namedtuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list."
-# set 
-        # https://docs.python.org/3/tutorial/datastructures.html
-                # A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
-# map()
-        # https://www.geeksforgeeks.org/python-map-function/
-                # map() function returns a list of the results after applying the given function to each item of a given iterable (list, tuple etc.)
-                    # Syntax: 
-                        # map(fun, iter)
-                   # Parameters :
-                       # fun : It is a function to which map passes each element of given iterable.
-                                # https://www.geeksforgeeks.org/python-difference-iterable-iterator/#targetText=Python%20%7C%20Difference%20between%20iterable%20and,using%20__next__()%20method.&targetText=For%20example%2C%20a%20list%20is,list%20is%20not%20an%20iterator.
-                                # iterable is an object that one can iterate over. A list is iterable but a list is not an iterator
-                       # iter : It is a iterable which is to be mapped.
 
 # this is using a counter to double-check the answer for the code later on.
 # https://stackoverflow.com/questions/19211018/using-counter-with-list-of-lists
@@ -113,19 +96,6 @@ print(vote_result[2:2 +3]) #['Khan', 2218231, 'Li']; slice from 2 to 5 (5 not-in
 results_sorted = sorted(name_and_votes, key=lambda name_and_votes:name_and_votes[1], reverse=True)
 print(results_sorted)
 # [['Khan', 2218231], ['Correy', 704200], ['Li', 492940], ["O'Tooley", 105630]]
-
-# https://www.geeksforgeeks.org/sorted-function-python/
-# Sorting 
-        # Sorted() sorts any sequence (list, tuple) and always returns a list with the elements in sorted manner, without modifying the original sequence.
-        # Syntax : sorted(iterable, key, reverse)
-        # Parameters : sorted takes three parameters from which two are optional.
-                # Iterable : sequence (list, tuple, string) or collection (dictionary, set, frozenset) or any other iterator that needs to be sorted.
-                # Key(optional) : A function that would server as a key or a basis of sort comparison.
-                # Reverse(optional) : If set true, then the iterable would be sorted in reverse (descending) order, by default it is set as false.
-# https://www.w3schools.com/python/python_lambda.asp
-    # A lambda function that adds 10 to the number passed in as an argument, and print the result:
-        # x = lambda a : a + 10
-        # print(x(5))
 
 # need to determine the number of summary rows for the loop function later that prints out the results for each candidate
 summary_nrow = len(results_sorted)
