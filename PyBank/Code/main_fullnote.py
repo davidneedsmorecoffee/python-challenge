@@ -11,9 +11,6 @@ with open(csvpath, "r") as f:
 print("there are", row_count, "rows of data, excluding the header")
 
 # https://stackoverflow.com/questions/13244466/in-python-how-do-i-delete-the-nth-list-item-from-a-list-of-lists-column-delete
-# this removes the item[1] of all lists
-    # for x in data_with_header:
-    #     del x[1]
 
 # quick test
 # print(data)  # Starts with [['Jan-2010', '867884'], ['Feb-2010', '984655'], ['Mar-2010', '322013'],
@@ -37,8 +34,7 @@ for i in range(0, (row_count-1)):
 # https://stackoverflow.com/questions/4012340/colon-in-python-list-index
 
 # """Yield successive n-sized chunks from l."""
-# How many elements each 
-# list should have 
+# How many elements each list should have 
 def divide_chunks(l, n): # set up a function that takes requires the l and n parameters
     # looping till length l 
     for i in range(0, len(l), n):  # for in in range from 0 to length of the "l"ist, 
