@@ -33,7 +33,6 @@ print(uniq_candidates) #[["O'Tooley"], ['Khan'], ['Li'], ['Correy']]
 
 
 # this is using a counter to double-check the answer for the code later on.
-# https://stackoverflow.com/questions/19211018/using-counter-with-list-of-lists
 from collections import Counter
 c=Counter()
 for i in name_only: # for each i-th list in the name_only list of lists; each i = list (containing one name)
@@ -64,10 +63,6 @@ print("this is the vote result", vote_result) # this gives #['Khan', 631, 'Corre
 # we need to split this up so each candidate and the numb of votes they recieved are paired
 # this is the vote result ["O'Tooley", 105630, 'Khan', 2218231, 'Li', 492940, 'Correy', 704200]
 
-# https://www.geeksforgeeks.org/break-list-chunks-size-n-python/
-# https://stackoverflow.com/questions/312443/how-do-you-split-a-list-into-evenly-sized-chunks
-# https://stackoverflow.com/questions/4012340/colon-in-python-list-index
-
 # """Yield successive n-sized chunks from l."""
 # How many elements each 
 # list should have 
@@ -91,7 +86,6 @@ print(vote_result[1:1 +2]) #[105630, 'Khan']; slice from 1 to 3 (3 not included)
 print(vote_result[2:2 +2]) #['Khan', 2218231]; slice from 2 to 4 (4 not included); this gives items 2 and 3
 print(vote_result[2:2 +3]) #['Khan', 2218231, 'Li']; slice from 2 to 5 (5 not-included); this gives items 2, 3, 4
 
-# https://stackoverflow.com/questions/4174941/how-to-sort-a-list-of-lists-by-a-specific-index-of-the-inner-list/4174955
 #results_sorted = sorted(x, key=lambda x: x[1], reverse=True) #reverse the sorting so it's in decreasing order
 results_sorted = sorted(name_and_votes, key=lambda name_and_votes:name_and_votes[1], reverse=True)
 print(results_sorted)
