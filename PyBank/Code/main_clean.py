@@ -77,6 +77,7 @@ Greatest Decrease in Profits: {mindate} (${minimum})")
 # print the results out as a csv file
 # the csvwriter.writerow lines are used to format the .csv file, each "row"/list has 4 items.
 output_path = os.path.join("..", "Results", "PyBank_results.csv")
+
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')  # Initialize csv.writer
