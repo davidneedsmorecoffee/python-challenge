@@ -50,7 +50,7 @@ for sublist in change_list:
 for x, y in zip(data, flat_change_list): 
     x.append(y)
 
-# another quick check
+# quick check
 # print(data)
 # print(data[0])
 # print(len(data)) 
