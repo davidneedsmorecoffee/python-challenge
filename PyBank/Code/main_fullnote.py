@@ -10,8 +10,6 @@ with open(csvpath, "r") as f:
     row_count = len(data) # count the length of the list of lists
 print("there are", row_count, "rows of data, excluding the header")
 
-# https://stackoverflow.com/questions/13244466/in-python-how-do-i-delete-the-nth-list-item-from-a-list-of-lists-column-delete
-
 # quick test
 # print(data)  # Starts with [['Jan-2010', '867884'], ['Feb-2010', '984655'], ['Mar-2010', '322013'],
 # print((data[0][0])) #gives Jan-2010; first list's first item
@@ -28,10 +26,6 @@ for i in range(0, (row_count-1)):
     change.append(int(data[i+1][1]) - int(data[i][1])) # take the value from i+1 month and subtract from i month's profit/losses
 
 # Quick check print(change)
-
-# https://www.geeksforgeeks.org/break-list-chunks-size-n-python/
-# https://stackoverflow.com/questions/312443/how-do-you-split-a-list-into-evenly-sized-chunks
-# https://stackoverflow.com/questions/4012340/colon-in-python-list-index
 
 # """Yield successive n-sized chunks from l."""
 # How many elements each list should have 
