@@ -5,8 +5,8 @@
 Created a Python script for analyzing the financial records based on a set of financial data called [budget_data.csv].
 
 The dataset is composed of two columns: 
-- Date
-- Profit/Losses
+- `Date`
+- `Profit/Losses`
 
 The Python script analyze the records to calculate the following:
 - The total number of months included in the dataset
