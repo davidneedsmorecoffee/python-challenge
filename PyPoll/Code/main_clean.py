@@ -28,7 +28,7 @@ for i in range(0, len(uniq_candidates)): # for i in 0 to len(uniq_candidates) wh
     vote_result.extend((uniq_candidates[i][0], votes)) # everytime we finish counting the votes for i-th unique candiate, we extend (we don't append here because we're adding multiple elements to the list and extending it ) the vote_results list by adding the i-th name from the uniq_candidates list, followed by the # of votes he/she received
     votes = 0
     # reset the counter at 0 here because after each j loop before going to the next i we want to reset the votes counter
-# this is the vote_result ["O'Tooley", 105630, 'Khan', 2218231, 'Li', 492940, 'Correy', 704200]
+    # this is the vote_result ["O'Tooley", 105630, 'Khan', 2218231, 'Li', 492940, 'Correy', 704200]
 
 def divide_chunks(l, n): # set up a function that takes requires the l and n parameters; # looping till length l 
     for i in range(0, len(l), n):  # for in in range from 0 to length of the "l"ist, 
