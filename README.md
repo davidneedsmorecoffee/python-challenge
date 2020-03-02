@@ -1,4 +1,4 @@
-# python-challenge
+# python script for analyzing and summarizing sample financial record
 
 Created a Python script for analyzing the financial records based on a set of financial data called [budget_data.csv].
 
