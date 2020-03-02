@@ -11,7 +11,6 @@ with open(csvpath, "r") as f:
 print("there are", row_count, "rows of data, excluding the header")
 
 # quick test
-# print(data)  # Starts with [['Jan-2010', '867884'], ['Feb-2010', '984655'], ['Mar-2010', '322013'],
 # print((data[0][0])) #gives Jan-2010; first list's first item
 # print((data[0][1]))  #gives 867884; first list's second item
 
