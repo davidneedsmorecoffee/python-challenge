@@ -1,6 +1,7 @@
 # python-challenge
 
-Created a Python script for analyzing the financial records based on a set of financial data called [budget_data.csv]
+Created a Python script for analyzing the financial records based on a set of financial data called [budget_data.csv].
+
 The dataset is composed of two columns: 
 - Date
 - Profit/Losses
