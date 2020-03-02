@@ -31,7 +31,6 @@ print(uniq_candidates) #[["O'Tooley"], ['Khan'], ['Li'], ['Correy']]
 # the set(...) creates an unordered collection with no duplicate elements
 # the list(t) for t in part takes the output form the set(...) and convert it back to a list
 
-
 # this is using a counter to double-check the answer for the code later on.
 from collections import Counter
 c=Counter()
@@ -51,6 +50,7 @@ for i in range(0, len(uniq_candidates)): # for i in 0 to len(uniq_candidates) wh
         if name_only[j][0]==uniq_candidates[i][0]: # if the j-th list (list item [0] because there's only one item in the list) mathces the i-th uniq_candidate, 
             votes = votes + 1 # then add 1 to the total count of votes
             # this inner looop with j basically count through all the ballots starting with the first candidate
+
 # The i outter loop basically repeats the inner loop with a different i-th candidate
     vote_result.extend((uniq_candidates[i][0], votes)) # everytime we finish counting the votes for i-th unique candiate, we extend (we don't append here because we're adding multiple elements to the list and extending it ) the vote_results list by adding the i-th name from the uniq_candidates list, followed by the # of votes he/she received
     votes = 0
