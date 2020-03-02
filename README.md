@@ -1,4 +1,4 @@
-# Python script for summarizing sample financial record
+# Python script for summarizing financial record
 
 Created a Python script for analyzing the financial records based on a set of financial data called [budget_data.csv].
 
